@@ -1,0 +1,23 @@
+/* Add this to your CSS file */
+.card-hover-effect {
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1) !important;
+    z-index: 2;
+}
+
+.card-hover-effect .folder-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Fix dropdown z-index conflict */
+.dropdown-menu {
+    z-index: 3 !important;
+}
